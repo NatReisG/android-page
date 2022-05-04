@@ -14,10 +14,8 @@
             font-style: normal;
         }
         body {
-            display: flex;
             background-color: greenyellow;
-            justify-content: center;
-            align-items: center;
+            
         }
         p {
             text-indent: 1.25cm;
@@ -57,9 +55,6 @@
             text-align: justify;
             width: clamp(205px, 100%, 800px);
         }
-        article {
-            border: 0px 50px;
-        }
         .gradient {
             background-image:linear-gradient(to right, rgba(0, 128, 0, 0.336), rgba(0, 128, 0, 0) ) ;
             color: rgb(0, 128, 0);
@@ -85,9 +80,7 @@
             background-color: rgb(1, 71, 1);
             text-align: justify;
             padding: 20px 35px;
-            border: 1px solid rgb(1, 71, 1);
-            box-shadow: 0 0 10px 1px dimgray;
-            margin: 0px 208px 0px 208px;
+            margin: 10px -3px 10px -3px;
         }
         iframe {
             width: 100%;
@@ -97,7 +90,7 @@
         }
         .anterod {
             background-color: white;
-            margin: 0px 208px;
+            margin: auto;
             border: 1px solid white;
             padding: 20px 10px 30px 10px;
             border-radius: 0% 0% 1% 1%;
@@ -114,9 +107,10 @@
             background-color: green;
             color: white;
             border: 3px solid green;
-            border-radius: 13% 13% 0% 0%;
+            border-radius: 5% 5% 0% 0%;
             text-align: left;
-            margin: 0%;
+            margin: -5px -21px -3px -21px;
+            width: auto;
             font-family: Arial, Helvetica, sans-serif;
         }
         .finalp {
@@ -136,10 +130,11 @@
         .bbox {
             background-color: aquamarine;
             height: auto;
-            width: auto;
+            width: clamp(125px, 100%, 600px);
             padding: 5px 20px;
             border: 1px solid aquamarine;
             border-radius: 1%;
+            margin: auto;
         }
         a {
             background-color: rgba(26, 209, 26, 0.527);
@@ -186,33 +181,29 @@
     </header>
     
     <main>
-        <article>
-            <h1 class="gradient">História do Mascote do Android</h1>
-            <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
-            <h2>A primeira verão</h2>
-            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do <a href="https://www.google.com/webhp?authuser=2" target="_blank" rel="external">Google</a>, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p> 
-            <picture>
-                <source media="(max-width: 800px)" srcset="imagens/dan-droids-pq.png">
-                <img src="imagens/dan-droids.png" alt="imagem.jpg">
-            </picture>
-            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
-            <h2>Surge um novo mascote</h2>
-            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p> 
-            <picture>
-                <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
-                <img src="imagens/irina-blok.jpg" alt="imaem.jpg">
-            </picture>
-            <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
-            <img class="androidg" src="imagens/bugdroid.png" alt="">
-            <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no <a href="https://benaticontabil.com/" target="_blank" rel="external">escritório</a> do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
-        </article>
-    </main>
+        <h1 class="gradient">História do Mascote do Android</h1>
+        <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+        <h2>A primeira verão</h2>
+        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do <a href="https://www.google.com/webhp?authuser=2" target="_blank" rel="external">Google</a>, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p> 
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/dan-droids-pq.png">
+            <img src="imagens/dan-droids.png" alt="imagem.jpg">
+        </picture>
+        <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+        <h2>Surge um novo mascote</h2>
+        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p> 
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="imaem.jpg">
+        </picture>
+        <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
+        <img class="androidg" src="imagens/bugdroid.png" alt="">
+        <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no <a href="https://benaticontabil.com/" target="_blank" rel="external">escritório</a> do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
             <div class="video">
                 <iframe  width="560" height="315" src="https://www.youtube.com/embed/tsWeD1x0kFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        <section class="anterod">
-                <h1 class="final">Quer aprender mais?</h2>
                 <div class="bbox">
+                    <h1 class="final">Quer aprender mais?</h2>
                     <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
                         <ul>
                             <li><abbr title="n sei">4.1 - Jelly Bean</abbr></li>
@@ -234,7 +225,7 @@
                         <p>Acesse aqui o site <a href="https://www.android.com/intl/pt-BR_br/history/" target="_blank" rel="external">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
                 </div>
             <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>   
-        </section>
+    </main>
     <footer>brrrrrrrrr</footer>
 </body>
 </html>
